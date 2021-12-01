@@ -20,6 +20,8 @@ public class Student extends Person {
         String response = super.introduce() + " I am a Student.";
         if(klass.getLeader() == this)
             response += String.format(" I am Leader of Class %d.", klass.getNumber());
+        else
+            response += String.format(" I am at Class %d.", getNumber());
         return response;
     }
 }

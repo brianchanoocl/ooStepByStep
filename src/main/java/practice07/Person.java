@@ -18,6 +18,14 @@ public class Person {
         return age;
     }
 
+    public boolean equals(Object obj){
+        return this.id == ((Person)obj).getID();
+    }
+
+    private int getID() {
+        return id;
+    }
+
     public String introduce() {
         return String.format("My name is %s. I am %d years old.", name, age);
     }
