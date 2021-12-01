@@ -3,27 +3,16 @@ package practice09;
 import java.util.LinkedList;
 
 public class Teacher extends Person {
-    private Klass klass;
     private LinkedList<Klass> classes;
 
     public Teacher(int id, String name, int age){
         super(id, name, age);
-        this.klass = null;
         this.classes = new LinkedList<Klass>();
-    }
-
-    public Teacher(int id, String name, int age, Klass klass){
-        super(id, name, age);
-        this.klass = klass;
     }
 
     public Teacher(int id, String name, int age, LinkedList<Klass> classes){
         super(id, name, age);
         this.classes = classes;
-    }
-
-    public Klass getKlass() {
-        return klass;
     }
 
     public String introduce() {
