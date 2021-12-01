@@ -1,17 +1,17 @@
 package practice06;
 
 public class Klass {
-    private int klass;
+    private int number;
 
-    public Klass(int klass) {
-        this.klass = klass;
+    public Klass(int number) {
+        this.number = number;
     }
 
     public int getNumber() {
-        return klass;
+        return number;
     }
 
     public String getDisplayName() {
-        return "Class " + klass;
+        return "Class " + number;
     }
 }

@@ -1,19 +1,19 @@
 package practice07;
 
 public class Klass {
-    private int klass;
+    private int number;
     private Student leader;
 
-    public Klass(int klass) {
-        this.klass = klass;
+    public Klass(int number) {
+        this.number = number;
     }
 
     public int getNumber() {
-        return klass;
+        return number;
     }
 
     public String getDisplayName() {
-        return "Class " + klass;
+        return "Class " + number;
     }
 
     public void assignLeader(Student student) {

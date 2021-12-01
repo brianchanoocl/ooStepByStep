@@ -3,21 +3,21 @@ package practice08;
 import java.util.ArrayList;
 
 public class Klass {
-    private int klass;
+    private int number;
     private Student leader;
     private ArrayList<Student> members;
 
-    public Klass(int klass) {
-        this.klass = klass;
+    public Klass(int number) {
+        this.number = number;
         members = new ArrayList<Student>();
     }
 
     public int getNumber() {
-        return klass;
+        return number;
     }
 
     public String getDisplayName() {
-        return "Class " + klass;
+        return "Class " + number;
     }
 
     public void assignLeader(Student student) {
